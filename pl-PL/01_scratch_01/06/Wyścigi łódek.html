@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html class="cc"  lang="pl-PL">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>Wyścigi łódek — Code Club World Projects</title>
+    <link rel="shortcut icon" href="../../../img/cc_favicon.ico">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template cc">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/cc_logo.png"></a>
+      <h1 class="title">Wyścigi łódek</h1>
+      <span class="level-indicator">Scratch 1</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Języki</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Polski</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch 1</a></li><li class="breadcrumbs-item current">Wyścigi łódek</li></ul></nav>
+
+          <section class="note registration-note">
+        <p>Każdy Klub Kodowania <u>musi być zarejestrowany</u>. Zarejestrowane kluby można zobaczyć na mapie na stronie <a href="http://www.codeclubworld.org/">codeclubworld.org</a> - jeżeli nie ma tam twojego klubu sprawdź na stronie <a href="http://jumpto.cc/18CpLPy">jumpto.cc/18CpLPy</a> (ang.) co trzeba zrobić, by to zmienić.</p>
+      </section>
+    
+    <main class="main lesson-steps" role="main">
+      
+<section id="wstep" class="level1 intro">
+<h1>Wstęp</h1>
+<p>Nauczysz się jak zrobić grę, w której zadaniem gracza jest kierowanie łódką tak, by ominęła przeszkody i dotarła do bezludnej wyspy.</p>
+<div class="scratch-preview">
+  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/63957956/?autostart=false" frameborder="0"></iframe>
+  <img src="boat-final.png">
+</div>
+</section>
+<section id="krok-1-rysowanie-planszy" class="level1 activity">
+<h1>Krok 1: Rysowanie planszy</h1>
+<section id="zadania-do-wykonania" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Rozpocznij nowy projekt w Scratchu i usuń duszka kota. Edytor Scratcha możesz znaleźć tutaj: <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.</p></li>
+<li>Narysuj nowe tło, które będzie planszą gry. Powinny się tam znaleźć:
+<ul>
+<li>pnie, które łódka będzie musiała omijać;</li>
+<li>bezludna wyspa, do której łódka musi dotrzeć.</li>
+</ul>
+<p>Plansza może wyglądać tak:</p>
+<p><img src="boat-bg.png" alt="screenshot" /></p></li>
+</ul>
+</section>
+</section>
+<section id="krok-2-kierowanie-odka" class="level1 activity">
+<h1>Krok 2: Kierowanie łódką</h1>
+<section id="zadania-do-wykonania-1" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Jeśli prowadzący klub przekazał Ci folder “Zasoby projektu”, kliknij na przycisk “Wczytaj duszka z pliku” i dodaj obrazek “łódka.png”. Zmniejsz duszka i umieść go na starcie.</p>
+<p><img src="boat-boat.png" alt="screenshot" /></p>
+<p>Jeśli nie masz pliku “łódka.png” możesz narysować własną łódkę!</p></li>
+<li><p>Będziesz kierował łódką za pomocą myszki. Dodaj takie bloki do skryptu łódki:</p>
+<p><img src="87b5caffee8ace0e81e19cd4b6ed6be562b75d3f.png" alt="    kiedy kliknięto zieloną flagę
+    ustaw kierunek na (0 v)
+    idź do x: (-190) y: (-150)
+    zawsze
+        ustaw w stronę [wskaźnik-myszy v]
+        przesuń o (1) kroków
+    end" /></p></li>
+<li><p>Przetestuj łódkę klikając na zieloną flagę i ruszając myszką. Czy łódka płynie w stronę wskaźnika myszki?</p>
+<p><img src="boat-mouse.png" alt="screenshot" /></p></li>
+<li><p>Co się dzieje, gdy łódka dogania wskaźnik myszki?</p>
+<p>Żeby temu zapobiec musisz dodać blok <code class="blockcontrol">jeżeli</code> do skryptu, tak żeby łódka ruszała się tylko wtedy, gdy jest dalej niż 5 pikseli od myszki.</p>
+<p><img src="2f17abda4a8e931e93c342e3a21836ca03867893.png" alt="    kiedy kliknięto zieloną flagę
+    ustaw kierunek na (0 v)
+    idź do x: (-190) y: (-150)
+    zawsze
+        jeżeli &lt; (odległość do [wskaźnik-myszy v]) &gt; (5) &gt; to
+              ustaw w stronę [wskaźnik-myszy v]
+              przesuń o (1) kroków
+        end
+    end" /></p></li>
+<li><p>Przetestuj łódkę ponownie. Sprawdź, czy problem zniknął.</p></li>
+</ul>
+</section>
+<section id="zapisz-swoj-projekt" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+</section>
+</section>
+<section id="krok-3-katastrofa" class="level1 activity new-page">
+<h1>Krok 3: Katastrofa!</h1>
+<p>Ta łódka potrafi przenikać przez drewniane ściany! Naprawmy to!</p>
+<section id="zadania-do-wykonania-2" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Będziesz potrzebować dwóch kostiumów dla łódki, jednego normalnego i drugiego dla rozbitej łódki. Zduplikuj kostium łódki, jeden kostium nazwij “cała” a drugi – “rozbita”.</p></li>
+<li><p>Kliknij na kostium “rozbita” i przy pomocy narzędzia “Wybierz” wycinaj kawałki łódki, przesuwaj je i obracaj. Niech łódka wygląda na rozbitą na kawałki.</p>
+<p><img src="boat-hit-costume.png" alt="screenshot" /></p></li>
+<li><p>Dodaj następujące bloki do skryptu łódki, wewnątrz pętli <code class="blockcontrol">zawsze</code>, tak żeby łódka rozbijała się zawsze gdy dotyka drewna:</p>
+<p><img src="67946ef6e258f52adabbf9d1c4561337c34ed5b9.png" alt="    jeżeli &lt;dotyka koloru [#603C15]?&gt; to
+        zmień kostium na [rozbita v]
+        powiedz [Nieeee!] przez (1) s
+        zmień kostium na [cała v]
+        ustaw kierunek na (0 v)
+        idź do x: (-215) y: (-160)
+    end" /></p>
+<p>Nowy kod jest wewnątrz pętli <code class="blockcontrol">zawsze</code>, żeby ciągle sprawdzać, czy łódka się nie rozbiła.</p></li>
+<li><p>Pamiętaj o tym, żeby łódka na starcie gry była cała.</p></li>
+<li><p>Teraz gdy spróbujesz wpłynąć na drewnianą barierę powinieneś zobaczyć jak łódka się rozpada i wraca na start.</p>
+<p><img src="boat-crash.png" alt="screenshot" /></p></li>
+</ul>
+</section>
+<section id="zapisz-swoj-projekt-1" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+</section>
+<section id="wyzwanie-wygrana" class="level2 challenge">
+<h2>Wyzwanie: Wygrana!</h2>
+<p>Potrafisz dodać jeszcze jeden blok <code class="blockcontrol">jeżeli</code> do kodu łódki tak, żeby gra mogła zakończyć się zwycięstwem gracza, gdy łódka dotrze do wyspy?</p>
+<p>Kiedy łódka dotrze na żółtą wyspę powinna krzyknąć “Hurra!” i gra powinna się zatrzymać. Będziesz potrzebować takich bloków:</p>
+<p><img src="4443d7fb3c73dcce2f61eaade4ffb9279d2c31f0.png" alt="    powiedz [HURRA!] przez (1) s
+    zatrzymaj [wszystko v]" /></p>
+<p><img src="boat-win.png" alt="screenshot" /></p>
+</section>
+<section id="zapisz-swoj-projekt-2" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+</section>
+<section id="wyzwanie-efekty-dzwiekowe" class="level2 challenge">
+<h2>Wyzwanie: efekty dźwiękowe</h2>
+<p>Czy potrafisz wzbogacić grę o efekty dźwiękowe, gdy łódka robija się lub dociera do wyspy? Możesz nawet dodać podkład muzyczny (zajrzyj do projektu “Kapela rockowa”, jeśli nie wiesz jak to zrobić).</p>
+</section>
+<section id="zapisz-swoj-projekt-3" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+</section>
+</section>
+<section id="krok-4-pomiar-czasu" class="level1 activity">
+<h1>Krok 4: Pomiar czasu</h1>
+<p>Dodaj do gry pomiar czasu, żeby gracz starał się dotrzeć do wyspy jak najszybciej.</p>
+<section id="zadania-do-wykonania-3" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Dodaj nową zmienną o nazwie <code class="blockdata">czas</code> do skryptu sceny. Możesz też zmienić sposób wyświetlania zmiennej. Jeśli nie wiesz, jak to zrobić, zajrzyj do projektu “Balony”.</p>
+<p><img src="boat-variable.png" alt="screenshot" /></p></li>
+<li><p>Dodaj poniższy kod to skryptu sceny. Dzięki temu, stoper będzie odmierzał czas aż do chwili dotarcia na wyspę:</p>
+<p><img src="f7c377d37c0f6018c5dd7f309128661c09b816bb.png" alt="    kiedy kliknięto zieloną flagę
+    ustaw [czas v] na [0]
+    zawsze
+        czekaj (0.1) s
+        zmień [czas v] o (0.1)
+    end" /></p></li>
+<li><p>To wszystko! Przetestuj grę i sprawdź, jak szybko portrafisz dotrzeć na wyspę.</p>
+<p><img src="boat-variable-test.png" alt="screenshot" /></p></li>
+</ul>
+</section>
+<section id="zapisz-swoj-projekt-4" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+</section>
+</section>
+<section id="krok-5-przeszkody-i-przyspieszacze" class="level1 activity">
+<h1>Krok 5: Przeszkody i przyspieszacze</h1>
+<p>Gra jest o wiele za łatwa. Dodaj parę rzeczy, żeby stała się ciekawsza.</p>
+<section id="zadania-do-wykonania-4" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Najpierw dodajmy “przyspieszacze”, które rozpędzą łódkę. Włącz edycję tła sceny i dorysuj parę strzałek przyspieszających.</p>
+<p><img src="boat-boost.png" alt="screenshot" /></p></li>
+<li><p>Teaz dodaj nowe bloki do pętli <code class="blockcontrol">zawsze</code> w skrypcie łódki, żeby przesuwała się 2 dodatkowe kroki kiedy dotyka białego przyspieszacza:</p>
+<p><img src="aa507a05cc89ac1252b0edcf1d37d91ed1bdd218.png" alt="    jeżeli &lt;dotyka koloru [#FFFFFF]?&gt; to
+        przesuń o (3) kroków
+    end" /></p></li>
+<li><p>Możesz też dodać obracającą się bramę, którą łódka będzie musiała ominąć. Dodaj nowego duszka “brama”, który wygląda tak:</p>
+<p><img src="boat-gate.png" alt="screenshot" /></p>
+<p>Zwróć uwagę, żeby kolor bramy był taki sam, jak kolor drewnianych przeszkód.</p></li>
+<li><p>Ustaw środek duszka bramy.</p>
+<p><img src="boat-center.png" alt="screenshot" /></p></li>
+<li><p>Dodaj kod do duszka bramy, tak by brama powoli się obracała. Użyj pętli <code class="blockcontrol">zawsze</code>.</p></li>
+<li><p>Przetestuj grę.</p>
+<p><img src="boat-gate-test.png" alt="screenshot" /></p></li>
+</ul>
+</section>
+<section id="zapisz-swoj-projekt-5" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+</section>
+<section id="wyzwanie-wiecej-przeszkod" class="level2 challenge new-page">
+<h2>Wyzwanie: Więcej przeszkód!</h2>
+<p>Potrafisz dodać do gry więcej przeszkód? Oto parę pomysłów:</p>
+<ul>
+<li>Możesz dorysować na planszy zielone wodorosty, które spowalniają łódkę. Możesz do tego użyć bloku <code class="blockcontrol">czekaj</code>:</li>
+</ul>
+<p><img src="b0ad34c80c551ee4ef89e1b056e2b33085287b79.png" alt="    czekaj (0.01) s" /></p>
+<p><img src="boat-algae.png" alt="screenshot" /></p>
+<ul>
+<li>Możesz dodać poruszający się obiekt, taki jak kłoda drewna albo rekin!</li>
+</ul>
+<p><img src="boat-obstacles.png" alt="screenshot" /></p>
+<p>Przydatne będą takie bloki:</p>
+<p><img src="f6679240e062e7231cc1cd5cc3480d1f29caca69.png" alt="    przesuń o (1) kroków
+    jeżeli na brzegu, odbij się" /></p>
+<p>Jeśli nowe obiekty nie są brązowe, musisz dodać następujące bloki do skryptu łódki:</p>
+<p><img src="497772bd118a16ee7ceef8d719b856c698cdc4ca.png" alt="    jeżeli&lt;  &lt;dotyka koloru [#603C15]?&gt; lub &lt;dotyka [rekin v]?&gt; &gt; to
+    end" /></p>
+</section>
+<section id="zapisz-swoj-projekt-6" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+</section>
+<section id="wyzwanie-wiecej-odek" class="level2 challenge new-page">
+<h2>Wyzwanie: Więcej łódek!</h2>
+<p>Potrafisz zmienić grę w wyścigi między dwoma łódkami?</p>
+<ul>
+<li>Zduplikuj duszka łódki, nazwij go “Gracz 2” i zmień kolor łódki.</li>
+</ul>
+<p><img src="boat-p2.png" alt="screenshot" /></p>
+<ul>
+<li>Zmień pozycję startową gracza 2, zmieniając wartości w bloku:</li>
+</ul>
+<p><img src="fb7eba364f3dcc9f9321f946140b2570cfc3a843.png" alt="    idź do x: (-190) y: (-150)" /></p>
+<ul>
+<li>Usuń kod, który kieruje łódką za pomocą myszy:</li>
+</ul>
+<p><img src="da776dd6edc772b534bb1d7bed54e46a401cc4ac.png" alt="    jeżeli &lt; (odległość do [wskaźnik-myszy v]) &gt; [5] &gt; to
+        ustaw w stronę [wskaźnik-myszy v]
+        przesuń o (1) kroków
+    end" /></p>
+<p>… i zastąp go kodem, który kieruje łódką przy pomocy klawiszy strzałek.</p>
+<p>This is the code you’ll need to move the boat forward:</p>
+<p><img src="19f50340113c6cc656e1a981b73d836b5fefc684.png" alt="    if &lt; key [up arrow v] pressed? &gt; then
+        move (1) steps
+    end" /></p>
+<p>You’ll also need code to <code class="blockmotion">turn</code> the boat when the left and right arrow keys are pressed.</p>
+</section>
+<section id="save-your-project" class="level2 save">
+<h2>Save your project</h2>
+</section>
+<section id="challenge-more-levels" class="level2 challenge new-page">
+<h2>Challenge: More levels!</h2>
+<p>Can you create additional backdrops, and allow the player to choose between levels?</p>
+<p><img src="bf471dc178c3e9c569583ab81ad7bddf7ef7c347.png" alt="    when [space v] key pressed
+    next backdrop" /></p>
+</section>
+<section id="save-your-project-1" class="level2 save">
+<h2>Save your project</h2>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>© Raspberry Pi Foundation. UK Registered Charity 1129409. These projects are for use outside the UK only. More information at <a href="https://codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>.</p>
+      <p>This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
+    </aside>
+
+    <div id="legend">
+        <div>
+            <img src="../../../img/check.png" alt="Zadania do wykonania" />
+            <div class="caption"><span class="check_text">Zadania do wykonania</span></div>
+            <div class="description">Wykonaj te <span class="check_text upper">polecenia</span> krok po kroku</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Przetestuj swój projekt" />
+          <div class="caption"><span class="flag_text">Przetestuj swój projekt</span></div>
+          <div class="description">Kliknij na zieloną flagę, aby <span class="flag_text upper">przetestować</span> swój kod</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Zapisz swój projekt" />
+          <div class="caption"><span class="save_text">Zapisz swój projekt</span></div>
+          <div class="description">Teraz <span class="save_text upper">zapisz</span> swój projekt</div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-5']);
+      _gaq.push(['_setDomainName', 'projects.codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
