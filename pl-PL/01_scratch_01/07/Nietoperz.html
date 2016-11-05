@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html class="world"  lang="pl-PL">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>Wesoły nietoperz — Code Club World Projects</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.ico">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Wesoły nietoperz</h1>
+      <span class="level-indicator">Scratch +</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Języki</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Polski</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Code Club SP52</a></li><li class="breadcrumbs-item current">Wesoły nietoperz</li></ul></nav>
+
+          <section class="note registration-note">
+        <p>All Code Clubs <strong>must be registered</strong>. Registered clubs appear on the map at <a href="http://www.codeclubworld.org/">codeclubworld.org</a> - if your club is not on the map then visit <a href="http://jumpto.cc/ccwreg">jumpto.cc/ccwreg</a> to register your club.</p>
+      </section>
+    
+    <main class="main lesson-steps" role="main">
+      
+<section id="wstep" class="level1 intro">
+<h1>Wstęp</h1>
+<p>Na tej lekcji zrobimy grę, w której wystąpi nietoperz, lewitujące dynie i groźne duchy.</p>
+<p>Tym razem nie zaczniemy od pustej sceny, tylko od zremiksowania istniejącego projektu zawierającego ruchome tło do gry:</p>
+<div class="scratch-preview">
+  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/129214496/?autostart=false" frameborder="0"></iframe>
+  <img src="boat-final.png">
+</div>
+</section>
+<section id="krok-1-remiksujemy-projekt" class="level1">
+<h1>Krok 1: Remiksujemy projekt</h1>
+<section id="zadania-do-wykonania" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Upewnij się, że umiesz otwierać linki w osobnym oknie lub karcie. Następnie otwórz w nowym oknie lub nowej karcie następujący projekt:<br /> <a href="https://scratch.mit.edu/projects/129214496/" class="uri">https://scratch.mit.edu/projects/129214496/</a></p></li>
+<li><p>Zajrzyj do środka projektu.</p></li>
+<li><p>Zaloguj się do scratcha, jeśli jeszcze tego nie zrobiłeś. Bez tego nie będziesz mógł zremiksować projektu.</p></li>
+<li><p>Naciśnij żółty przycisk <code class="blockyellow">Remix</code>, na górze z prawej strony.</p></li>
+</ul>
+<p>Świetnie! Kopia projektu jest już na Twoim koncie.</p>
+<p>Projekt zawiera już dwa duszki: drzewa, które są używane do rysowania przesuwającego się tła, oraz dynię. Skrypt drzew jest skomplikowany, nie przejmuj się, jeśli niewiele z niego rozumiesz. Nie będziemy nic w nim zmieniać.</p>
+</section>
+</section>
+<section id="krok-2-dodajemy-nietoperza" class="level1">
+<h1>Krok 2: Dodajemy nietoperza</h1>
+<ul>
+<li><p>Dodaj duszka brązowego nietoperza, znajdziesz go w kategorii Zwierzęta.</p></li>
+<li><p>Nazwij tego duszka „nietoperz”.</p></li>
+<li><p>Dodaj do skryptu nietoperza następujące bloki:</p>
+<p><img src="6d961079eb9739dbc8f2f232e4b50b3f67222b4a.png" alt="kiedy kliknięto zieloną flagę
+ustaw rozmiar na (50) %
+idź do x: (-160) y: (0)
+zawsze
+    zmień y o (-3)
+end" /></p></li>
+</ul>
+<section id="przetestuj-swoj-projekt" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p>Co dzieje się z nietoperzem po naciśnięciu flagi?</p>
+</section>
+<section id="zapisz-swoj-projekt" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+</section>
+</section>
+<section id="krok-3-machamy-skrzydami" class="level1 activity">
+<h1>Krok 3: Machamy skrzydłami</h1>
+<p>Jak widać, nietoperz nie jest zbyt dobry w szybowaniu. Może gdyby machał skrzydłami, łatwiej było by mu się utrzymać w powietrzu?</p>
+<section id="zadania-do-wykonania-1" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Nietoperz ma dwa kostiumy. Zmień ich nazwy na „skrzydła w górze” i „skrzydła w dole”.</p></li>
+<li><p>Dodaj do skryptu nietoperza następujące bloki:</p>
+<p><img src="7135164d3dc8a610df317828b8e1cdaff437eb18.png" alt="kiedy klawisz [spacja v] naciśnięty
+zmień kostium na [skrzydła w dole v]    
+powtórz (20) razy
+    zmień y o (6)
+end
+zmień kostium na [skrzydła w górze v]" /></p></li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt-1" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p>Naciskając spację pomóż nietoperzowi utrzymać wysokość.</p>
+</section>
+<section id="zapisz-swoj-projekt-1" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+</section>
+</section>
+<section id="krok-4-dodajemy-dynie" class="level1 activity">
+<h1>Krok 4: Dodajemy dynie</h1>
+<p>W tym kroku dodamy dynie, które nietoperz będzie mógł łapać. Duszek dyni jest już w projekcie, musisz tylko dodać do niego odpowiedni skrypt.</p>
+<section id="zadania-do-wykonania-2" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Przejdż do zakładki „Skrypty” duszka „dynia” i dodaj tam następujące bloki:</p>
+<p><img src="fc10bd16b464b40dc4db11910d849ef6a53ebe15.png" alt="kiedy kliknięto zieloną flagę
+ustaw rozmiar na (10) %
+ukryj
+zawsze
+sklonuj [siebie v]
+czekaj (2) s
+end" /></p>
+<p><img src="0501407dca6ec0246124275e9c28b74e27aa34e8.png" alt="kiedy zaczynam jako klon
+idź do x: (240) y: (0)
+pokaż
+powtarzaj aż &lt;(współrzędna x) &lt; [-240]&gt;
+    zmień x o (-6)
+end
+usuń tego klona" /></p></li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt-2" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p>Dynie powinny pojawiać się regularnie z prawej strony ekranu i znikać po lewej stronie.</p>
+</section>
+<section id="zadania-do-wykonania-3" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Spróbuj zrobić tak, żeby dynie pojawiały się na różnej wysokości, a nie jedna za drugą w połowie wysokości ekranu. Użyj takiego klocka:</p>
+<p><img src="e42ed25040b9790cd0070e3cfb769442f0843857.png" alt="losuj od (-100) do (100)" /></p>
+<p>Czy wiesz, gdzie go wstawić?</p></li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt-3" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p>Teraz dynie powinny pojawiać się na różnej wysokości. Jest o wiele ciekawiej!</p>
+</section>
+<section id="zapisz-swoj-projekt-2" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+</section>
+</section>
+<section id="krok-5-apiemy-dynie" class="level1 activity">
+<h1>Krok 5: Łapiemy dynie</h1>
+<p>Chcemy, żeby dynia znikała nie tylko gdy dotrze do lewej krawędzi, ale także gdy dotknie jej nietoperz.</p>
+<section id="zadania-do-wykonania-4" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Wewnątrz pętli <code class="blockcontrol">powtarzaj aż</code> dodaj następujące bloki:</p>
+<p><img src="8e77475c06df1141e7de5f5fb9d7b7ad79d1feff.png" alt="jeżeli &lt;dotyka [nietoperz v]&gt;
+    usuń tego klona
+end" /></p></li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt-4" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p>Czy dynie znikają kiedy dotknie jej nietoperz?</p>
+</section>
+<section id="zapisz-swoj-projekt-3" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+</section>
+</section>
+<section id="krok-6-liczymy-punkty" class="level1 activity">
+<h1>Krok 6: Liczymy punkty</h1>
+<p>Gracz będzie dostawał punkty za każdą złapaną dynię i tracił je za każdą dynię, której nie złapie.</p>
+<section id="zadania-do-wykonania-5" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Utwórz nową zmienną <code class="blockdata">punkty</code></p></li>
+<li><p>Za każdym razem, kiedy dynia znika dotknięta przez nietoperza, zmienna <code class="blockdata">punkty</code> powinna zwiększać się o 1. Użyj do tego bloku:</p>
+<p><img src="dc7af6e597e73ff827f754a51ac42222c9d5992b.png" alt="   zmień [punkty v] o (1)" /></p></li>
+<li><p>Za każdym razem, kiedy dynia ucieka za lewą krawędź, zmienna <code class="blockdata">punkty</code> powinna zmniejszać się o 1. Użyj do tego bloku:</p>
+<p><img src="b45e8296387c1c4db0f89eb6b07b675f1e47c1b2.png" alt="   zmień [punkty v] o (-1)" /></p></li>
+</ul>
+<p>Wskazówka: nowe bloki powinny znaleźć się w skrypcie dyni, tuż przed blokami <code class="blockcontrol">usuń tego klona</code>.</p>
+<ul>
+<li><p>Przy każdym uruchomieniu gry licznik punktów powinien się zerować. Użyj bloku</p>
+<p><img src="68b2e6b48eb24d52b47672b596182d083aa989b2.png" alt="   ustaw [punkty v] na (0)" /></p></li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt-5" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p>Czy gracz dostaje punkty za złapane dynie i traci punkty za dynie, które uciekły?</p>
+</section>
+<section id="zapisz-swoj-projekt-4" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+</section>
+</section>
+<section id="krok-7-dodajemy-duchy" class="level1 activity">
+<h1>Krok 7: Dodajemy duchy</h1>
+<p>Żeby gra była ciekawsza, dodamy groźne duchy.</p>
+<section id="zadania-do-wykonania-6" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Dodaj nowego duszka, a właściwie ducha. Wybierz „Ghoula” z kategorii „Fikcja”.</p></li>
+<li><p>Skrypt ducha będzie podobny do skryptu dyni. W zakładce „Skrypty” ducha dodaj następujące bloki:</p>
+<p><img src="ddcdc25940346b4a351ce5b13a221ad26cc6237e.png" alt="kiedy kliknięto zieloną flagę
+ustaw rozmiar na (70) %
+ukryj
+zawsze
+    czekaj (losuj od (1) do (10)) s
+sklonuj [siebie v]
+end" /></p>
+<p><img src="46334d59adf4be0915b279398fc9fb12d484d722.png" alt="kiedy zaczynam jako klon
+idź do x: (240) y: (losuj od (-100) do (100))
+pokaż
+powtarzaj aż &lt;(współrzędna x) &lt; [-240]&gt;
+    zmień x o (-8)
+end
+usuń tego klona" /></p></li>
+<li><p>Kiedy duch dotknie nietoperza, gra będzie się kończyć. Wstaw następujące bloki do wnętrza pętli <code class="blockcontrol">powtarzaj aż</code> w skrypcie ducha:</p>
+<p><img src="af699da1714bb34c19c595557a76f9f4cc009b77.png" alt="jeżeli &lt;dotyka [nietoperz v]&gt;
+    nadaj [koniec gry v]
+    usuń tego klona
+end" /></p></li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt-6" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p>Co dzieje się, gdy duch złapie nietoperza? Nie do końca o to nam chodziło…</p>
+</section>
+<section id="zapisz-swoj-projekt-5" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+<p>Na koniec gry musimy jeszcze zatrzymać nietoperza, a nowe dynie i duchy nie powinny się pojawiać.</p>
+<ul>
+<li><p>Dodaj następujące bloki do skryptu nietoperza, dyni oraz ducha:</p>
+<p><img src="575223268168c7770d77aca6a9ad2d4721dbc7cd.png" alt="kiedy otrzymam [koniec gry v]
+zatrzymaj [inne skrypty duszka v]" /></p></li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt-7" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p>Upewnij się, że gra zatrzymuje się kiedy duch złapie nietoperza.</p>
+</section>
+<section id="zapisz-swoj-projekt-6" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+</section>
+<section id="wyzwanie-1-czy-umiesz-sprawic-zeby-duchy-poruszay-sie-szybciej-czy-gra-nie-jest-wtedy-za-trudna" class="level2 challenge">
+<h2>Wyzwanie 1: Czy umiesz sprawić, żeby duchy poruszały się szybciej? Czy gra nie jest wtedy za trudna?</h2>
+</section>
+<section id="wyzwanie-2-dodaj-napis-game-over-ktory-pojawia-sie-na-koniec-gry" class="level2 challenge">
+<h2>Wyzwanie 2: Dodaj napis „Game Over”, który pojawia się na koniec gry</h2>
+</section>
+<section id="wyzwanie-3-dodaj-nowe-przedmioty-np.-magiczne-ciasteczka-ktore-spowoduja-ze-nietoperz-zmniejszy-sie-na-minute-dzieki-czemu-atwiej-bedzie-mu-unikac-duchow-albo-balony-ktore-unosza-sie-z-dou-do-gory-a-nie-tylko-przesuwaja-poziomo-jak-dynie-i-duchy." class="level2 challenge">
+<h2>Wyzwanie 3: Dodaj nowe przedmioty, np. magiczne ciasteczka, które spowodują, że nietoperz zmniejszy się na minutę, dzięki czemu łatwiej będzie mu unikać duchów, albo balony, które unoszą się z dołu do góry, a nie tylko przesuwają poziomo, jak dynie i duchy.</h2>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
+      <p>This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
+    </aside>
+
+    <div id="legend">
+        <div>
+            <img src="../../../img/check.png" alt="Zadania do wykonania" />
+            <div class="caption"><span class="check_text">Zadania do wykonania</span></div>
+            <div class="description">Wykonaj te <span class="check_text upper">polecenia</span> krok po kroku</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Przetestuj swój projekt" />
+          <div class="caption"><span class="flag_text">Przetestuj swój projekt</span></div>
+          <div class="description">Kliknij na zieloną flagę, aby <span class="flag_text upper">przetestować</span> swój kod</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Zapisz swój projekt" />
+          <div class="caption"><span class="save_text">Zapisz swój projekt</span></div>
+          <div class="description">Teraz <span class="save_text upper">zapisz</span> swój projekt</div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-5']);
+      _gaq.push(['_setDomainName', 'projects.codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
